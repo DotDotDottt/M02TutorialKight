@@ -14,21 +14,22 @@
 </head>
 <body>
 
+  <!-- navbar -->
   <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
     <div class="container-xxl">
-
+      <!-- navbar brand / title -->
       <a class="navbar-brand" href="#intro">
         <span class="text-secondary fw-bold">
           <i class="bi bi-book-half"></i>
           Net Ninja Pro - the Book
         </span>
       </a>
-
+      <!-- toggle button for mobile nav -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
+      <!-- navbar links -->
       <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -52,7 +53,7 @@
     </div>
   </nav>
 
-
+  <!-- main image & intro text -->
   <section id="intro">
     <div class="container-lg">
       <div class="row g-4 justify-content-center align-items-center">
@@ -63,22 +64,22 @@
           </h1>
           <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
-
+          <!-- open sidebar / offcanvas -->
           <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
             Explore my other books
           </a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
-
+          <!-- tooltip -->
           <span class="tt" data-bs-placement="bottom" title="Net Ninja Pro book cover">
-            <img src="/assests/ebook-cover.png" class="img-fluid" alt="ebook">
+            <img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook">
           </span>
         </div>
       </div>
     </div>
   </section>
 
-
+  <!-- pricing plans -->
   <section id="pricing" class="bg-light mt-5">
     <div class="container-lg">
       <div class="text-center">
@@ -131,10 +132,10 @@
         </div>
       </div>
 
-    </div>
+    </div><!-- end container -->
   </section>
 
-
+  <!-- topics at a glance -->
   <section id="topics">
     <div class="container-md">
       <div class="text-center">
@@ -143,11 +144,12 @@
       </div>
       <div class="row my-5 g-5 justify-content-around align-items-center">
         <div class="col-6 col-lg-4">
-          <img src="/assests/kindle.png" class="img-fluid" alt="ebook">
+          <img src="/assets/kindle.png" class="img-fluid" alt="ebook">
         </div>
         <div class="col-lg-6">
           
-        <div class="accordion" id="chapters">
+          <!-- accordion -->
+          <div class="accordion" id="chapters">
             <div class="accordion-item">
               <h2 class="accordion-header" id="heading-1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
@@ -297,7 +299,8 @@
     </div>
   </section>
 
- 
+  <!-- contact form -->
+  <!-- form-control, form-label, form-select, input-group, input-group-text -->
   <section id="contact">
     <div class="container-lg">
       
@@ -315,7 +318,7 @@
                 <i class="bi bi-envelope-fill text-secondary"></i>
               </span>
               <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
-
+              <!-- tooltip -->
               <span class="input-group-text">
                 <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
                   <i class="bi bi-question-circle text-muted"></i>
@@ -328,7 +331,7 @@
                 <i class="bi bi-person-fill text-secondary"></i>
               </span>
               <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
-
+              <!-- tooltip -->
               <span class="input-group-text">
                 <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
                   <i class="bi bi-question-circle text-muted"></i>
@@ -359,6 +362,7 @@
     </div>
   </section>
 
+  <!-- get updates / modal trigger -->
   <section class="bg-light">
     <div class="container">
       <div class="text-center">
@@ -396,6 +400,7 @@
     </div>
   </div>
 
+  <!-- side panel / offcanvas -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
@@ -403,6 +408,7 @@
     </div>
     <div class="offcanvas-body">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In minima ducimus excepturi quasi tempore fugit quis voluptatibus aut error possimus, tenetur natus magni quam voluptatem quae eligendi repudiandae delectus eaque!</p>
+      <!-- dropdown -->
       <div class="dropdown mt-3">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
           Choose a book title
